@@ -1,0 +1,70 @@
+main {
+  max-width: 1280px;
+}
+
+.pcWindow {
+  background-image: url(../img/pcImage.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.container .copy {
+  margin-top: 160px;
+  margin-left: 40px;
+}
+.container .copy .mainCopy {
+  font-family: Puritan;
+  font-size: 80px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.container .copy .subCopy {
+  font-family: Yugothic;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+.container .ctaButton {
+  background-color: #e9663e;
+  padding: 24px 45px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+}
+.container .ctaButton .ctaCopy {
+  display: inline-block;
+}
+.container .ctaButton .ctaCopy .ctaCopy_sub {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.container .ctaButton .ctaCopy .ctaCopy_main {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.spWindow {
+  height: 2000px;
+  width: 35%;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  right: 140px;
+}/*# sourceMappingURL=style.css.map */
