@@ -69,12 +69,46 @@ main {
 // SP幅
 
 .spWindow {
-  height: 2000px;
+  height: 10000px;
   width: 35%;
-  background-color: #ccc;
+  background-color: #f0f0f0;
   position: absolute;
   top: 0;
   right: 140px;
+}
+
+.lead {
+  width: 100%;
+  height: 600px;
+  background-color: var.$orange;
+  text-align: center;
+  .leadTitle {
+    font-family: Yugothic;
+    font-size: 28px;
+    color: var.$white;
+    font-weight: bold;
+    padding-top: 72px;
+  }
+  .leadArticle {
+    font-family: Yugothic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var.$white;
+    text-align: left;
+    width: 80%;
+    margin: 72px auto;
+  }
+  .leadImage {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #ccc;
+    // img {
+    //   // object-fit coverではみ出すのはなぜ？？
+    //   width: 100%;
+    //   border-radius: 20px;
+    // }
+  }
 }
 
 
