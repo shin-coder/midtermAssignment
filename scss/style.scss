@@ -9,7 +9,7 @@ main {
 
 // PC幅
 
-.pcWindow {
+.main-view {
   background-image: url(../img/pcImage.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -17,48 +17,49 @@ main {
   width: 100%;
   height: 100vh;
   z-index: -1;
+  &__container {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
 }
 
-.container {
-  width: 50%;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  .copy {
-    margin-top: 160px;
-    margin-left: 40px;
-    .mainCopy {
-      font-family: Puritan;
-      font-size: 80px;
-      color: #fff;
-      font-weight: bold;
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-    .subCopy {
-      font-family: Yugothic;
-      font-size: 20px;
-      color: #fff;
-      font-weight: bold;
-      margin-bottom: 120px;
-    }
+.main-view__copy {
+  margin-top: 160px;
+  margin-left: 40px;
+  &--main {
+  font-family: Puritan;
+  font-size: 80px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
   }
-  .ctaButton {
-    @include mix.buttonStyle {
-      .ctaCopy {
-        display: inline-block;
-        .ctaCopy_sub {
-          color: #fff;
-          font-weight: bold;
-          font-size: 16px;
-          text-align: center;
-        }
-        .ctaCopy_main {
-          color: #fff;
-          font-weight: bold;
-          font-size: 18px;
-          text-align: center;
-        }
+  &--sub {
+  font-family: Yugothic;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 120px;
+  }
+}
+
+.cta-button {
+  @include mix.buttonStyle {
+    &__Copy {
+      display: inline-block;
+      &--sub {
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+      }
+      &--main {
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
       }
     }
   }
@@ -68,7 +69,7 @@ main {
 
 // SP幅
 
-.spWindow {
+.sp-container {
   height: 10000px;
   width: 35%;
   background-color: #f0f0f0;
@@ -82,14 +83,14 @@ main {
   height: 600px;
   background-color: var.$orange;
   text-align: center;
-  .leadTitle {
+  &__title {
     font-family: Yugothic;
     font-size: 28px;
     color: var.$white;
     font-weight: bold;
     padding-top: 72px;
   }
-  .leadArticle {
+  &__article {
     font-family: Yugothic;
     font-size: 18px;
     line-height: 1.6;
@@ -98,7 +99,7 @@ main {
     width: 80%;
     margin: 72px auto;
   }
-  .leadImage {
+  &__image {
     width: 80%;
     height: 300px;
     margin: 0 auto;

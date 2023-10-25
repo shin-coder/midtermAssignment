@@ -2,7 +2,7 @@ main {
   max-width: 1280px;
 }
 
-.pcWindow {
+.main-view {
   background-image: url(../img/pcImage.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -11,18 +11,18 @@ main {
   height: 100vh;
   z-index: -1;
 }
-
-.container {
+.main-view__container {
   width: 50%;
   display: grid;
   place-items: center;
   padding: 20px;
 }
-.container .copy {
+
+.main-view__copy {
   margin-top: 160px;
   margin-left: 40px;
 }
-.container .copy .mainCopy {
+.main-view__copy--main {
   font-family: Puritan;
   font-size: 80px;
   color: #fff;
@@ -30,37 +30,38 @@ main {
   line-height: 1;
   margin-bottom: 20px;
 }
-.container .copy .subCopy {
+.main-view__copy--sub {
   font-family: Yugothic;
   font-size: 20px;
   color: #fff;
   font-weight: bold;
   margin-bottom: 120px;
 }
-.container .ctaButton {
+
+.cta-button {
   background-color: #e9663e;
   padding: 24px 45px;
   border-radius: 50px;
   display: grid;
   place-items: center;
 }
-.container .ctaButton .ctaCopy {
+.cta-button__Copy {
   display: inline-block;
 }
-.container .ctaButton .ctaCopy .ctaCopy_sub {
+.cta-button__Copy--sub {
   color: #fff;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
 }
-.container .ctaButton .ctaCopy .ctaCopy_main {
+.cta-button__Copy--main {
   color: #fff;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
 
-.spWindow {
+.sp-container {
   height: 10000px;
   width: 35%;
   background-color: #f0f0f0;
@@ -75,14 +76,14 @@ main {
   background-color: #e9663e;
   text-align: center;
 }
-.lead .leadTitle {
+.lead__title {
   font-family: Yugothic;
   font-size: 28px;
   color: #fff;
   font-weight: bold;
   padding-top: 72px;
 }
-.lead .leadArticle {
+.lead__article {
   font-family: Yugothic;
   font-size: 18px;
   line-height: 1.6;
@@ -91,7 +92,7 @@ main {
   width: 80%;
   margin: 72px auto;
 }
-.lead .leadImage {
+.lead__image {
   width: 80%;
   height: 300px;
   margin: 0 auto;
