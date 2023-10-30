@@ -2,6 +2,16 @@ main {
   max-width: 1280px;
 }
 
+html {
+  font-family: Yugothic, sans-serif;
+  font-feature-settings: "palt";
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 .main-view {
   background-image: url(../img/pcImage.jpg);
   background-repeat: no-repeat;
@@ -63,11 +73,12 @@ main {
 
 .sp-container {
   height: 10000px;
-  width: 35%;
+  width: 480px;
   background-color: #f0f0f0;
   position: absolute;
   top: 0;
   right: 140px;
+  overflow: hidden;
 }
 
 .lead {
@@ -77,15 +88,13 @@ main {
   text-align: center;
 }
 .lead__title {
-  font-family: Yugothic;
-  font-size: 28px;
+  font-size: 32px;
   color: #fff;
   font-weight: bold;
   padding-top: 72px;
 }
 .lead__article {
-  font-family: Yugothic;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #fff;
   text-align: left;
@@ -97,4 +106,106 @@ main {
   height: 300px;
   margin: 0 auto;
   background-color: #ccc;
+}
+
+.reason {
+  width: 80%;
+  margin: 200px auto 80px;
+  text-align: center;
+}
+.reason__copy {
+  font-size: 40px;
+  color: #e9663e;
+  font-weight: bold;
+}
+.reason span {
+  font-family: Yugothic;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+.reason__description dt {
+  font-weight: bold;
+  color: #027552;
+  margin: 40px auto 24px;
+}
+.reason__description dt span {
+  font-size: 20px;
+  color: #027552;
+}
+.reason__description dt strong {
+  font-size: 32px;
+  border-bottom: 1px solid #027552;
+}
+.reason__description dd {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.6;
+}
+.reason__description-image {
+  width: 100%;
+  height: 366px;
+  padding: 0 14px;
+}
+.reason__description-image-inner {
+  position: relative;
+  height: 100%;
+}
+.reason__description-image-item {
+  position: absolute;
+  width: 75.84%;
+}
+.reason__description-image-item:first-child {
+  bottom: 0;
+  left: 0;
+}
+.reason__description-image-item:last-child {
+  bottom: 20px;
+  right: 10px;
+}
+.reason__description-image-item:last-child > img {
+  transform: rotate(6deg);
+}
+
+.cta {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.cta__bg {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-color: #e9663e;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bg-copy {
+  position: absolute;
+  font-size: 100px;
+  color: #e9663e;
+  font-weight: bold;
+  text-align: center;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.assurance {
+  padding: 110px 30px 0;
+  position: relative;
+}
+.assurance__title {
+  text-align: center;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.assurance__article {
+  font-size: 16px;
+  line-height: 1.6;
 }/*# sourceMappingURL=style.css.map */
