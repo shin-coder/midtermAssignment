@@ -127,7 +127,7 @@ img {
 .reason__description dt {
   font-weight: bold;
   color: #027552;
-  margin: 40px auto 24px;
+  margin: 0 auto 24px;
 }
 .reason__description dt span {
   font-size: 20px;
