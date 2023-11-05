@@ -3,6 +3,10 @@
 @use 'var' as var;
 @use 'mixin' as mix;
 
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
 main {
   max-width: 1280px;
 }
@@ -272,13 +276,16 @@ img {
   color: var.$orange;
   font-weight: bold;
   text-align: center;
-  top: -30px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0.1;
 }
 
 .assurance {
-  padding: 130px 30px 0;
+  padding-top: 160px;
+  width: 85%;
+  margin: 0 auto;
   position: relative;
   &__title {
     text-align: center;
@@ -294,12 +301,14 @@ img {
 }
 
 .message {
+  position: relative;
   width: 100%;
   height: 900px;
   background-color: #419158;
   padding-top: 80px;
   border-radius: 60px;
   margin-top: 80px;
+  z-index: 10;
   &__copy {
     text-align: center;
     color: var.$white;
@@ -348,16 +357,79 @@ img {
   }
 }
 
-.faq-item {
-  width: 80%;
-  &__question {
+.slide {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: -20px;
+  &__image--1, &__image--2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw) 16px;
+  }
+  &__image--2 {
+    margin: 0 calc(45% - 50vw);
+  }
+}
+
+.faq {
+  position: relative;
+}
+
+.faq__title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    span {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+.faq__item {
+  width: 85%;
+  margin: 40px auto;
+  &--question {
+    font-weight: bold;
+    color: var.$green;
     &::before {
       content: 'Q';
-      padding: 12px 14px;
-      font-size: 20px;
+      padding: 12px 13px;
+      font-size: 18px;
+      font-weight: bold;
       background-color: var.$green;
       border-radius: 50%;
       color: var.$white;
+      margin-right: 16px;
+    }
+  }
+  &--answer {
+    line-height: 1.6;
+    margin-top: 32px;
+    font-weight: bold;
+    &-inner {
+      display: flex;
+    }
+    &-icon {
+      // width: 42px;
+      // height: 42px;
+      width: 10%;
+      height: 42px;
+      border: 2px solid var.$orange;
+      border-radius: 50%;
+      background-color: #fff;
+      display: grid;
+      place-items: center;
+      color: var.$orange;
+      font-weight: bold;
+      margin-right: 16px;
+    }
+    &-text {
+      width: 84%;
     }
   }
 }
