@@ -21,7 +21,7 @@ img {
   height: auto;
 }
 
-// PC幅
+// 960px以上での画面幅
 
 .main-view {
   background-image: url(../img/pcImage.jpg);
@@ -105,9 +105,9 @@ img {
   }
 }
 
-// 
 
-// SP幅
+
+// 960px未満の画面幅
 
 .sp-container {
   height: auto;
@@ -137,6 +137,7 @@ img {
   height: 100vh;
 }
 
+// リードセクション
 
 .lead {
   width: 100%;
@@ -167,6 +168,8 @@ img {
     }
   }
 }
+
+// 理由セクション
 
 .reason {
   width: 85%;
@@ -232,8 +235,9 @@ img {
   }
 }
 
+// お問い合わせセクション
+
 .cta {
-  // background-color: var.$orange;
   width: 100%;
   height: 770px;
   position: relative;
@@ -313,6 +317,7 @@ img {
   left: -50%;
 }
 
+//お問い合わせセクション下の文字あしらい
 
 .bg-copy {
   position: absolute;
@@ -325,6 +330,8 @@ img {
   transform: translateX(-50%);
   opacity: 0.1;
 }
+
+// 品質保証セクション
 
 .assurance {
   padding-top: 160px;
@@ -347,6 +354,8 @@ img {
     }
   }
 }
+
+// 生産者の声セクション
 
 .message {
   position: relative;
@@ -405,6 +414,8 @@ img {
   }
 }
 
+// 生産者の声セクション下のスライダー
+
 .slide {
   position: relative;
   width: 100%;
@@ -417,14 +428,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // gap: 16px;
-    // width: 100vw;
-    // margin: 0 calc(50% - 50vw) 16px;
   }
-  // &__image--2 {
-  //   margin: 0 calc(45% - 50vw);
-  // }
   &__image-item {
     margin-right: 16px;
     width: 160px;
@@ -456,6 +460,17 @@ img {
     transform: translateX(0);
   }
 }
+
+@keyframes loop-slide2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+// よくある質問セクション
 
 .faq {
   position: relative;
@@ -497,8 +512,6 @@ img {
       display: flex;
     }
     &-icon {
-      // width: 42px;
-      // height: 42px;
       width: 10%;
       height: 42px;
       border: 2px solid var.$orange;
@@ -516,6 +529,8 @@ img {
   }
 }
 
+// 末巻コピー
+
 .last-copy {
   width: 85%;
   height: auto;
@@ -524,5 +539,32 @@ img {
     text-align: center;
     font-size: 56px;
     color: var.$green;
+  }
+}
+
+// フッター
+
+.footer {
+  width: 100%;
+  height: 230px;
+  background-color: #222;
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #5d5d5d;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    li {
+      color: #f1f1f1;
+      font-size: 12px;
+      &:not(:last-child) {
+        padding-right: 16px;
+        border-right: 1px solid #f1f1f1;
+      }
+    }
   }
 }
