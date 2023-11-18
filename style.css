@@ -9,6 +9,7 @@ main {
 html {
   font-family: "Montserrat", "Yugothic", sans-serif;
   font-feature-settings: "palt";
+  scroll-behavior: smooth;
 }
 
 img {
@@ -555,6 +556,7 @@ img {
 }
 .faq__item--answer-text {
   width: 83%;
+  font-family: Yugothic;
 }
 
 .last-copy {
