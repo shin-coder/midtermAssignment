@@ -151,6 +151,7 @@ img {
   top: 0;
   right: 100px;
   overflow: hidden;
+  box-shadow: 0 0 20px #444;
 }
 @media screen and (max-width: 579px) {
   .sp-container {
