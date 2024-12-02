@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -19,6 +21,7 @@ img {
 
 .main-view {
   background-image: url(./img/pcImage.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   position: fixed;
@@ -196,8 +199,7 @@ img {
   border-radius: 20px;
 }
 .lead__image img {
-  -o-object-position: -20px -90px;
-     object-position: -20px -90px;
+  object-position: -20px -90px;
   width: 600px;
   border-radius: 20px;
 }
@@ -570,8 +572,7 @@ img {
   text-align: center;
   font-size: 56px;
   color: #027552;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .char {
