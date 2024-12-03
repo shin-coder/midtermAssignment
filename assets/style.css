@@ -169,7 +169,6 @@ img {
   height: 100vh;
   background-image: url(../img/pcImage2.jpg);
   background-repeat: no-repeat;
-  background-position: 0 -100px;
   margin: 0 auto;
 }
 
@@ -575,8 +574,13 @@ img {
 .last-copy {
   width: 85%;
   height: auto;
-  padding-bottom: 120px;
-  margin: 0 auto;
+  padding-bottom: 160px;
+  margin: 14rem auto 0;
+}
+@media (min-width: 768px) {
+  .last-copy {
+    margin-top: 0;
+  }
 }
 .last-copy p {
   text-align: center;
