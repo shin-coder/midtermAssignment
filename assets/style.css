@@ -17,10 +17,11 @@ html {
 img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .main-view {
-  background-image: url(./img/pcImage.jpg);
+  background-image: url(../img/pcImage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -166,7 +167,7 @@ img {
 .main-view--sp {
   width: 100%;
   height: 100vh;
-  background-image: url(./img/pcImage2.jpg);
+  background-image: url(../img/pcImage2.jpg);
   background-repeat: no-repeat;
   background-position: 0 -100px;
   margin: 0 auto;
@@ -244,9 +245,9 @@ img {
 }
 .reason__description-image {
   width: 100%;
-  height: 366px;
-  padding: 0 14px;
-  margin: 0px auto 40px;
+  height: 50vw;
+  max-height: 260px;
+  margin: 2rem auto 0;
 }
 .reason__description-image-inner {
   position: relative;
@@ -258,14 +259,11 @@ img {
   width: 60%;
 }
 .reason__description-image-item:first-child {
-  bottom: 0;
-  left: 0;
   left: 50%;
-  transform: translateX(-60%);
+  transform: translateX(-50%);
   opacity: 0.3;
 }
 .reason__description-image-item:last-child {
-  bottom: 20px;
   right: 50px;
 }
 .reason__description-image-item:last-child > img {
@@ -290,7 +288,7 @@ img {
   font-size: 16px;
 }
 .cta__copy--main strong {
-  font-size: 32px;
+  font-size: 30px;
 }
 .cta__copy--sub {
   width: 150px;
@@ -304,15 +302,11 @@ img {
   width: 85%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
-  margin-bottom: 80px;
-}
-.cta__inner-image {
-  width: 140px;
-  height: 100px;
-  margin-right: 16px;
+  margin-top: 3rem;
+  gap: 1rem;
 }
 .cta__inner-text {
   color: #fff;
@@ -329,14 +323,20 @@ img {
   font-size: 14px;
   font-weight: normal;
 }
+@media (min-width: 768px) {
+  .cta__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .cta__btn {
-  width: 390px;
-  height: 70px;
   border: 1px solid #fff;
   display: grid;
   place-content: center;
   margin: 0 auto;
   border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
 }
 .cta__btn p {
   color: #fff;
@@ -352,12 +352,13 @@ img {
 
 .cta-bg {
   background-color: #e9663e;
-  height: 800px;
-  width: 960px;
+  width: 200%;
+  max-width: 960px;
   margin: 0 auto;
   border-radius: 50%;
   position: absolute;
   left: -50%;
+  padding-bottom: 5rem;
 }
 
 .bg-copy {
@@ -366,14 +367,19 @@ img {
   color: #e9663e;
   font-weight: bold;
   text-align: center;
-  top: -10px;
+  top: 80px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.1;
 }
+@media (min-width: 768px) {
+  .bg-copy {
+    top: -140px;
+  }
+}
 
 .assurance {
-  padding-top: 160px;
+  padding-top: 200px;
   width: 85%;
   margin: 0 auto;
   position: relative;
@@ -392,6 +398,11 @@ img {
 .assurance__text span {
   color: #e9663e;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  .assurance {
+    padding-top: 0px;
+  }
 }
 
 .message {
@@ -522,43 +533,39 @@ img {
 }
 
 .faq__item {
-  width: 90%;
-  margin: 20px auto;
+  width: 80%;
+  margin: 2rem auto;
 }
 .faq__item--question {
   font-weight: bold;
   color: #027552;
-  text-indent: -3.3em;
-  padding-left: 3.3em;
+  text-indent: -1.5em;
+  padding-left: 1em;
+  line-height: 1.6;
 }
 .faq__item--question::before {
   content: "Q";
   font-family: sans-serif;
-  padding: 12px 13px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #027552;
   border-radius: 50%;
-  color: #fff;
-  line-height: 40px;
-  margin-right: 16px;
+  color: #027552;
+  padding-right: 0.5em;
 }
 .faq__item--answer {
-  text-indent: -3em;
-  padding-left: 3em;
-  color: #e9663e;
-  font-weight: bold;
-  margin-top: 2.5rem;
+  text-indent: -1.5em;
+  padding-left: 1em;
+  color: #333333;
+  margin-top: 1rem;
+  line-height: 1.6;
 }
 .faq__item--answer::before {
   content: "A";
-  padding: 10px 14px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #e9663e;
   border-radius: 50%;
-  color: #fff;
-  margin-right: 16px;
+  color: #e9663e;
+  padding-right: 0.5em;
 }
 .faq__item--answer-text {
   width: 83%;
@@ -569,7 +576,7 @@ img {
   width: 85%;
   height: auto;
   padding-bottom: 120px;
-  margin: 120px auto 0;
+  margin: 0 auto;
 }
 .last-copy p {
   text-align: center;
